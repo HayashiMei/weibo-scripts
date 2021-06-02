@@ -4,7 +4,7 @@ const config = require('./config')
 
 const API = require('./services')
 
-const shouldDelete = (item) => (!!item.retweeted_status && !item.retweeted_status.user) || item.text.includes('发起的投票')
+const shouldDelete = (item) => (!!item.retweeted_status && !item.retweeted_status.user)
 const maybeLottery = (item) => !!item.retweeted_status && (item.retweeted_status.text.includes('抽') || item.retweeted_status.text.includes('奖'))
 
 const deleteByDate = async (date) => {
