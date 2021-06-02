@@ -1,0 +1,17 @@
+{
+  "name": "weibo-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "delete-retweet": "node ./src/deleteRetweet.js",
+    "cancel-like": "node ./src/cancelLike.js"
+  },
+  "author": "HayashiMei <hayashi@kato-megumi.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chalk": "^4.1.1",
+    "dayjs": "^1.10.5",
+    "dotenv": "^10.0.0"
+  }
+}
